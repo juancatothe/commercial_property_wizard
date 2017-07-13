@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Detroit Commercial Property Wizard</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-select.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-skin-boxes.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="fs-form-wrap" id="fs-form-wrap">
+				<div class="fs-title">
+					<div class="branding">
+				    	<img src="./img/white.png"/>
+				    </div>
+					<h1>Detroit Commercial Property Wizard</h1>
+				</div>
+				<form id="myform" class="fs-form fs-form-full" autocomplete="off">
+					<ol class="fs-fields">
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q1">What type of property are you looking for?</label>
+							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+								<span><input id="q1a" name="q1" type="checkbox" value="retail"/><label for="q1a" class="radio-retail">Office/Retail</label></span>
+								<span><input id="q1b" name="q1" type="checkbox" value="school"/><label for="q1b" class="radio-school">School Building</label></span>
+								<span><input id="q1c" name="q1" type="checkbox" value="industrial"/><label for="q1c" class="radio-abacusstar">Industrial</label></span>
+								<span><input id="q1d" name="q1" type="checkbox" value="vacant" data-property_type="Vacant Lot"/><label for="q1d" class="radio-vacant">Vacant Land</label></span>
+							</div>
+						</li>
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q2" data-info="">How much space do you need? (ft&#xb2;)</label>
+							<input class="fs-anim-lower" id="q2" name="q2" type="text" placeholder="ex. 4000"/>
+						</li>
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q3" data-info="">What is your price range?</label>
+							<input class="fs-anim-lower" id="q3" name="q3" type="text" placeholder="$25,000"/>
+						</li>
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q4" data-info="This will help us know what kind of service you need">Which part of town are you interested in?</label>
+							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+								<span><input id="q4a" name="q4" type="radio" value="mobile"/><label for="q4a" class="radio-mobile">East</label></span>
+								<span><input id="q4b" name="q4" type="radio" value="conversion"/><label for="q4b" class="radio-conversion">West</label></span>
+								<span><input id="q4c" name="q4" type="radio" value="social"/><label for="q4c" class="radio-social">Southwest</label></span>
+							</div>
+						</li>
+					</ol><!-- /fs-fields -->
+					<button class="fs-submit" type="submit">Submit</button>
+				</form><!-- /fs-form -->
+			</div><!-- /fs-form-wrap -->
+
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/selectFx.js"></script>
+		<script src="js/fullscreenForm.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+		<script src="js/scripts.js"></script>
+		<script>
+			(function() {
+				var formWrap = document.getElementById( 'fs-form-wrap' );
+
+				[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	
+					new SelectFx( el, {
+						stickyPlaceholder: false,
+						onChange: function(val){
+							document.querySelector('span.cs-placeholder').style.backgroundColor = val;
+						}
+					});
+				} );
+
+				new FForm( formWrap, {
+					onReview : function() {
+						classie.add( document.body, 'overview' ); // for demo purposes only
+					}
+				} );
+			})();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,1 @@
+{"zoning": "R1", "zoning_type":"Single-Family Residential","by_right_uses" :{"Family Day Care Home", "Single-Family Detached Dwelling", "Urban Garden"}}

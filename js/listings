@@ -1,0 +1,12 @@
+var listings = [
+	{
+		name: '',
+		street_address: '',
+		zip: '',
+		price: '',
+		size: '',
+		land_size: '',
+		zoning: '',
+		
+	}
+]
