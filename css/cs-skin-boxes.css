@@ -18,13 +18,15 @@ div.cs-skin-boxes {
 }
 
 .cs-skin-boxes > span {
-	border: 3px solid #292c30;
+	border: 3px solid #B7CDC2;
 	border-radius: 5px;
-	width: 150px;
-	height: 140px;
+	width: 255px;
+	height: 200px;
 	font-size: 0.5em;
 	padding: 0 0 0 10px;
 	background: #555b64;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
 }
 
 div.cs-skin-boxes:focus > span {
@@ -34,7 +36,7 @@ div.cs-skin-boxes:focus > span {
 .cs-skin-boxes > span::before {
 	content: '';
 	display: block;
-	padding-top: 110px;
+	padding-top: 170px;
 	margin-left: -10px;
 	box-shadow: 0 25px 0 #292c30, inset 0 -10px #292c30;
 }
@@ -53,7 +55,7 @@ div.cs-skin-boxes:focus > span {
 	top: 0;
 	left: 0;
 	overflow: auto;
-	background: #3b3f45;
+	background: #B7CDC2;
 	font-size: 12px;
 	opacity: 0;
 	-webkit-transition: opacity 0.3s, visibility 0s 0.3s;
@@ -83,7 +85,7 @@ div.cs-skin-boxes:focus > span {
 	overflow: hidden;
 	opacity: 0;
 	color: rgba(255,255,255,0.6);
-	border: 10px solid transparent;
+	border: 10px solid #B7CDC2;
 	background-clip: padding-box;
 	-webkit-transform: scale3d(0.8,0.8,1);
 	transform: scale3d(0.8,0.8,1);

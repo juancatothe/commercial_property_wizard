@@ -70,7 +70,7 @@
 		// show [current field]/[total fields] status
 		ctrlNavPosition : true,
 		// reached the review and submit step
-		onReview : function() { console.log('something'); return false; }
+		onReview : function() { return false; }
 	};
 
 	/**
@@ -173,7 +173,9 @@
 
 		// navigation dots
 		if( this.options.ctrlNavDots ) {
+			//console.log(this.options);
 			this.ctrlNavDots.forEach( function( dot, pos ) {
+				//console.log('177: ' + pos);
 				dot.addEventListener( 'click', function() {
 					self._showField( pos );
 				} );
@@ -229,6 +231,7 @@
 		if( this.isLastStep || !this._validade() || this.isAnimating ) {
 			return false;
 		}
+		//console.log(this);
 		this.isAnimating = true;
 
 		// check if on last step
@@ -332,6 +335,7 @@
 	 * jumps to the field at position pos
 	 */
 	FForm.prototype._showField = function( pos ) {
+		//console.log('337: ' + pos);
 		if( pos === this.current || pos < 0 || pos > this.fieldsCount - 1 ) {
 			return false;
 		}

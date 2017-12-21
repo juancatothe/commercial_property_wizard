@@ -9,14 +9,20 @@ html, body, .container {
 }
 
 body {
-	background: #279989;
-	color: #fff;
+	background: white;
+	color: #003B49;
 	font-weight: 400;
 	font-size: 1em;
 	font-family: 'Raleway', Arial, sans-serif;
 	overflow: hidden;
-	overflow-y: scroll;
 	min-height: 590px;
+}
+body.overview{
+	overflow-y: scroll;
+}
+
+body.overview #welcome-message{
+	display: none;
 }
 
 img{
@@ -25,23 +31,26 @@ img{
 }
 
 a {
-	color: rgba(0,0,0,0.3);
+	color: rgba(0, 59, 73, 0.3);
 	text-decoration: none;
 	outline: none;
 }
 
 a:hover, a:focus {
-	color: #fff;
-}
-
-input[type=checkbox]{
-	visibility: hidden;
+	color: green;
 }
 
 .fs-title > *{
-		display: 	inline-block;
+		display: inline-block;
+}
+.fs-title h1{
+	font-size: 1.25em;
+    color: #003B49;
+    text-decoration: underline;
+    text-decoration-color: #279989;
+    text-decoration-style: double;
 }
 .branding{
-	max-width: 150px;
+	max-width: 70px;
 	vertical-align: middle;
 }

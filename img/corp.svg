@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{fill:none;stroke:#B3B3B3;stroke-width:0.1;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#B3B3B3;stroke-width:0.1661;stroke-miterlimit:10;}
+</style>
+<g class="st0">
+	<g class="st1">
+		<rect x="20" y="12" class="st2" width="60" height="60"/>
+		<line class="st2" x1="50" y1="12" x2="50" y2="72"/>
+		<line class="st2" x1="80" y1="42" x2="20" y2="42"/>
+		<line class="st2" x1="20" y1="12" x2="80" y2="72"/>
+		<rect x="28" y="20" class="st2" width="44" height="44"/>
+		<line class="st2" x1="80" y1="12" x2="20" y2="72"/>
+		<line class="st2" x1="20" y1="42" x2="50" y2="12"/>
+		<line class="st2" x1="50" y1="12" x2="80" y2="42"/>
+		<line class="st2" x1="80" y1="42" x2="50" y2="72"/>
+		<line class="st3" x1="74.9" y1="74.9" x2="25.1" y2="25.1"/>
+		<circle class="st3" cx="50" cy="50" r="34.9"/>
+	</g>
+</g>
+<g>
+	<path d="M31.7,6.8v11.6h36.5V6.8H31.7z M35,10.1h13.3v5H35V10.1z M64.9,15.1H51.7v-5h13.3V15.1z"/>
+	<path d="M74.9,36.7V0.2H25.1v31.6H0.2v68.1h99.7V36.7H74.9z M28.4,3.5h43.2v33.2h-3.3V25.1H31.7v6.6h-3.3V3.5z M16.8,96.5h-3.3v-10
+		h3.3V96.5z M23.4,96.5h-3.3v-10h3.3V96.5z M33.4,96.5h-6.6V83.2H10.1v13.3H3.5V35h29.9V96.5z M35,28.4h13.3v5H36.7v-1.7H35V28.4z
+		 M36.7,46.7h11.6v5H36.7V46.7z M36.7,64.9h11.6v5H36.7V64.9z M45,96.5V84.9h3.3v11.6H45z M51.7,96.5V84.9H55v11.6H51.7z M63.3,96.5
+		h-5V81.6H41.7v14.9h-5V73.3h26.6V96.5z M63.3,69.9H51.7v-5h11.6V69.9z M63.3,61.6H36.7V55h26.6V61.6z M63.3,51.7H51.7v-5h11.6V51.7
+		z M63.3,43.4H36.7v-6.6h26.6V43.4z M64.9,33.4H51.7v-5h13.3V33.4z M79.9,96.5h-3.3v-5h3.3V96.5z M86.5,96.5h-3.3v-5h3.3V96.5z
+		 M96.5,96.5h-6.6v-8.3H73.3v8.3h-6.6V40h29.9V96.5z"/>
+	<path d="M6.8,38.4V50h23.3V38.4H6.8z M10.1,41.7h6.6v5h-6.6V41.7z M26.7,46.7h-6.6v-5h6.6V46.7z"/>
+	<path d="M6.8,53.3v11.6h23.3V53.3H6.8z M10.1,56.6h6.6v5h-6.6V56.6z M26.7,61.6h-6.6v-5h6.6V61.6z"/>
+	<path d="M6.8,68.3v11.6h23.3V68.3H6.8z M10.1,71.6h6.6v5h-6.6V71.6z M26.7,76.6h-6.6v-5h6.6V76.6z"/>
+	<path d="M69.9,43.4V55h23.3V43.4H69.9z M73.3,46.7h6.6v5h-6.6V46.7z M89.9,51.7h-6.6v-5h6.6V51.7z"/>
+	<path d="M69.9,58.3v11.6h23.3V58.3H69.9z M73.3,61.6h6.6v5h-6.6V61.6z M89.9,66.6h-6.6v-5h6.6V66.6z"/>
+	<path d="M69.9,73.3v11.6h23.3V73.3H69.9z M73.3,76.6h6.6v5h-6.6V76.6z M89.9,81.6h-6.6v-5h6.6V81.6z"/>
+</g>
+</svg>

@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<title>Detroit Commercial Property Wizard</title>
+		<link href="./img/favicon.ico" rel="icon" sizes="16x16" type="image">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/styles.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
@@ -17,46 +18,97 @@
 			<div class="fs-form-wrap" id="fs-form-wrap">
 				<div class="fs-title">
 					<div class="branding">
-				    	<img src="./img/white.png"/>
+				    	<img src="./img/green.png"/>
 				    </div>
-					<h1>Detroit Commercial Property Wizard</h1>
+					<h1>City of Detroit Property Application Form</h1>
 				</div>
 				<form id="myform" class="fs-form fs-form-full" autocomplete="off">
 					<ol class="fs-fields">
 						<li>
-							<label class="fs-field-label fs-anim-upper" for="q1">What type of property are you looking for?</label>
+							<p id="welcome-message" class="fs-field-label fs-anim-upper">Welcome to the City of Detroit Property Application Form. Use this form for City of Detroit properties and Detroit Land Bank Authority properties.</p>
+						</li>
+						<li data-input-trigger>
+							<label class="fs-field-label fs-anim-upper" for="q1" data-info="An individual would be one unincorporated person. A business would be a registered LLC or Non-Profit">Will the property you are applying to purchase be owned by an individual or a business entity?</label>
 							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
-								<span><input id="q1a" name="q1" type="checkbox" value="retail"/><label for="q1a" class="radio-retail">Office/Retail</label></span>
-								<span><input id="q1b" name="q1" type="checkbox" value="school"/><label for="q1b" class="radio-school">School Building</label></span>
-								<span><input id="q1d" name="q1" type="checkbox" value="vacant" data-property_type="Vacant Lot"/><label for="q1d" class="radio-vacant">Vacant Land</label></span>
+								<span><input id="q1a" name="q1" type="radio" value="Individual"/><label for="q1a" class="radio-label radio-individual">Individual</label></span>
+								<span><input id="q1b" name="q1" type="radio" value="Business"/><label for="q1b" class="radio-label radio-business">Business</label></span>
+							</div>
+						</li>
+						<li data-input-trigger>
+							<label class="fs-field-label fs-anim-upper" for="q2" data-info="An LLC, Corporation, or Partnership with profit motives. A Non-Profit with non-profit movtives.">What type of business?</label>
+							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+								<span><input id="q2a" name="q2" type="radio" value="LLC, Partnership, Corporation, etc"/><label for="q2a" class="radio-label radio-corporation">LLC, Partnership, Corporation, etc</label></span>
+								<span><input id="q2b" name="q2" type="radio" value="Non-Profit"/><label for="q2b" class="radio-label radio-non-profit">Non-Profit</label></span>
+							</div>
+						</li>
+						<li data-input-trigger>
+							<label class="fs-field-label fs-anim-upper" data-info="We'll make sure to use it all overWe'll make sure to use it all overWe'll make sure to use it all overWe'll make sure to use it all overWe'll make sure to use it all overWe'll make sure to use it all overWe'll make sure to use it all overWe'll make sure to use it all overWe'll make sure to use it all over">Choose a Property</label>
+							<select class="cs-select cs-skin-boxes fs-anim-lower">
+								<option class="property-list" value="" disabled selected>Choose a Property</option>
+								<option class="property-list" value="563-Rosedale-Ct">563 Rosedale Ct</option>
+								<option class="property-list" value="2632-Glynn-Ct">2632 Glynn Ct</option>
+								<option class="property-list" value="3005-Pasadena">3005 Pasadena</option>
+								<option class="property-list" value="3301-Columbus">3301 Columbus</option>
+								<option class="property-list" value="4678-Bewick">4678 Bewick</option>
+								<option class="property-list" value="4703-Drexel">4703-Drexel</option>
+								<option class="property-list" value="7746-Longacre">7746 Longacre</option>
+								<option class="property-list" value="8883-Mendota">8883 Mendota</option>
+								<option class="property-list" value="8956-Isham">8956 Isham</option>
+								<option class="property-list" value="9101-Burt">9101 Burt</option>
+								<option class="property-list" value="9244-Ostego">9244 Ostego</option>
+								<option class="property-list" value="9623-Cheyenne">9623 Cheyenne</option>
+								<option class="property-list" value="9983-Schaefer">9983 Schaefer</option>
+								<option class="property-list" value="11407-Abington">11407 Abington</option>
+								<option class="property-list" value="11860-Wayburn">11860 Wayburn</option>
+								<option class="property-list" value="12272-Hartwell">12272 Hartwell</option>
+								<option class="property-list" value="15350-Cherrylawn">15350 Cherrylawn</option>
+								<option class="property-list" value="15730-Westbrook">15730 Westbrook</option>
+								<option class="property-list" value="15739-Ohio">15739 Ohio</option>
+								<option class="property-list" value="15950-Chalfonte">15950 Chalfonte</option>
+								<option class="property-list" value="17529-Lumpkin">17529 Lumpkin</option>
+								<option class="property-list" value="18865-Orleans">18865 Orleans</option>
+								<option class="property-list" value="19030-Charest">19030 Charest</option>
+								<option class="property-list" value="19201-Concord">19201 Concord</option>
+								<option class="property-list" value="19321-Wexford">19321 Wexford</option>
+								<option class="property-list" value="19350-Ferguson">19350 Ferguson</option>
+								<option class="property-list" value="19748-Harlow">19748 Harlow</option>
+								<option class="property-list" value="19965-Forrer">19965 Forrer</option>
+								<option class="property-list" value="20150-Helen">20150 Helen</option>
+								<option class="property-list" value="20275-Bradford">20275 Bradford</option>
+							</select>
+						</li>
+						<!--li id="basic-info">
+							<label class="fs-field-label fs-anim-upper" for="q4a" data-info="We won't send you spam, we promise...">Name</label>
+							<input class="fs-anim-lower" id="q4a" name="q4a" type="text" placeholder="Kwame Kilpatrick" required/>
+							<label class="fs-field-label fs-anim-upper" for="q4b" data-info="We won't send you spam, we promise...">Phone number</label>
+							<input class="fs-anim-lower" id="q4b" name="q4b" type="tel" placeholder="313-313-3131" required/>
+						</li>
+						<li data-input-trigger>
+							<label class="fs-field-label fs-anim-upper" for="q3" data-info="This will help us know what kind of service you need">What's your priority for your new website?</label>
+							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+								<span><input id="q3b" name="q3" type="radio" value="conversion"/><label for="q3b" class="radio-conversion">Sell things</label></span>
+								<span><input id="q3c" name="q3" type="radio" value="social"/><label for="q3c" class="radio-social">Become famous</label></span>
+								<span><input id="q3a" name="q3" type="radio" value="mobile"/><label for="q3a" class="radio-mobile">Mobile market</label></span>
 							</div>
 						</li>
 						<li>
-							<label class="fs-field-label fs-anim-upper" for="q2" data-info="">How much space do you need? (ft&#xb2;)</label>
-							<input class="fs-anim-lower" id="q2" name="q2" type="text" placeholder="ex. 4000"/>
+							<label class="fs-field-label fs-anim-upper" for="q4">Describe how you imagine your new website</label>
+							<textarea class="fs-anim-lower" id="q4" name="q4" placeholder="Describe here"></textarea>
 						</li>
 						<li>
-							<label class="fs-field-label fs-anim-upper" for="q3" data-info="">What is your price range?</label>
-							<input class="fs-anim-lower" id="q3" name="q3" type="text" placeholder="$25,000"/>
-						</li>
-						<li>
-							<label class="fs-field-label fs-anim-upper" for="q4" data-info="This will help us know what kind of service you need">Which part of town are you interested in?</label>
-							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
-								<span><input id="q4a" name="q4" type="radio" value="mobile"/><label for="q4a" class="radio-mobile">East</label></span>
-								<span><input id="q4b" name="q4" type="radio" value="conversion"/><label for="q4b" class="radio-conversion">West</label></span>
-								<span><input id="q4c" name="q4" type="radio" value="social"/><label for="q4c" class="radio-social">Southwest</label></span>
-							</div>
-						</li>
+							<label class="fs-field-label fs-anim-upper" for="q5">What's your budget?</label>
+							<input class="fs-mark fs-anim-lower" id="q5" name="q5" type="number" placeholder="1000" step="100" min="100"/>
+						</li-->
 					</ol><!-- /fs-fields -->
-					<button class="fs-submit" type="submit">Submit</button>
+					<button class="fs-submit" type="submit">Send answers</button>
 				</form><!-- /fs-form -->
 			</div><!-- /fs-form-wrap -->
 
 		</div><!-- /container -->
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 		<script src="js/classie.js"></script>
 		<script src="js/selectFx.js"></script>
 		<script src="js/fullscreenForm.js"></script>
-		<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 		<script src="js/scripts.js"></script>
 		<script>
 			(function() {
@@ -66,7 +118,11 @@
 					new SelectFx( el, {
 						stickyPlaceholder: false,
 						onChange: function(val){
-							document.querySelector('span.cs-placeholder').style.backgroundColor = val;
+							$('span.cs-placeholder').css({
+								'background':'url("img/DLBA/' + val + '.jpg")',
+								'background-size':'100% auto',
+								'background-repeat':'no-repeat'
+							});
 						}
 					});
 				} );

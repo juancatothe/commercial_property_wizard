@@ -3,7 +3,7 @@
 	position: relative;
 	width: 100%;
 	height: 100%;
-	color: #fff;
+	color: #003B49;
 }
 
 .overview .fs-form-wrap {
@@ -208,7 +208,7 @@ button.fs-continue,
     position: absolute;
     bottom: 100%;
    	left: 0;
-    padding: 0 0 10px;
+    padding: 0 0 20px;
     min-width: 200px;
 	content: attr(data-info);
 	font-size: 0.4em;
@@ -219,6 +219,7 @@ button.fs-continue,
     -webkit-transform: translate3d(0,-5px,0);
     transform: translate3d(0,-5px,0);
     pointer-events: none;
+    width: 65vw;
 }
 
 .fs-form-full .fs-fields > li label[data-info]:hover::before {
@@ -268,7 +269,7 @@ button.fs-continue,
 }
 
 .fs-fields input:focus {
-	background-color: rgba(0,59,73,0.15); /* Fixes chrome bug with placeholder */
+	background-color: rgba(0,59,73,0.25); /* Fixes chrome bug with placeholder */
 }
 
 .fs-form-overview .fs-fields input:focus {
@@ -278,7 +279,9 @@ button.fs-continue,
 .fs-form-overview .fs-fields input {
 	font-size: 1.2em;
 }
-
+.fs-radio-group{
+	text-align: center;
+}
 .fs-fields .fs-radio-custom input[type="radio"] {
 	position: absolute;
 	display: block;
@@ -291,12 +294,12 @@ button.fs-continue,
 }
 
 .fs-fields > li .fs-radio-custom span {
-	float: left;
+	display: inline-block;
 	position: relative;
 	margin-right: 3%;
 	padding: 10px;
 	max-width: 200px;
-	width: 25%;
+	width: 30%;
 	text-align: center;
 	font-weight: 700;
 	font-size: 50%;
@@ -342,38 +345,25 @@ button.fs-continue,
 	transform: translate(-50%,-50%);
 }
 
-.fs-fields .fs-radio-custom label.radio-mobile::after {
-	background-image: url(../img/mobile.svg);
+.fs-fields .fs-radio-custom label.radio-individual::after {
+	background-image: url(../img/man.svg);
 }
 
-.fs-fields .fs-radio-custom label.radio-conversion::after {
-	background-image: url(../img/conversion.svg);
+.fs-fields .fs-radio-custom label.radio-business::after {
+	background-image: url(../img/corp.svg);
 }
 
-.fs-fields .fs-radio-custom label.radio-abacusstar::after {
-	background-image: url(../img/abacusstar.svg);
+.fs-fields .fs-radio-custom label.radio-corporation::after {
+	background-image: url(../img/money.svg);
 }
 
-.fs-fields .fs-radio-custom label.radio-social::after {
-	background-image: url(../img/social.svg);
-}
-
-.fs-fields .fs-radio-custom label.radio-retail::after {
-	background-image: url(../img/retail.svg);
-}
-
-.fs-fields .fs-radio-custom label.radio-school::after {
-	background-image: url(../img/school.svg);
-}
-
-.fs-fields .fs-radio-custom label.radio-vacant::after {
-	background-image: url(../img/vacant.svg);
+.fs-fields .fs-radio-custom label.radio-non-profit::after {
+	background-image: url(../img/earth.svg);
 }
 
 .fs-fields .fs-radio-custom label:hover::after,
 .fs-fields input[type="radio"]:focus + label::after,
-.fs-fields input[type="radio"]:checked + label::after, 
-.fs-fields input[type="checkbox"]:checked + label::after {
+.fs-fields input[type="radio"]:checked + label::after {
 	opacity: 1;
 }
 
@@ -417,6 +407,7 @@ button.fs-continue,
 
 .fs-form div.cs-select.cs-skin-boxes {
 	display: block;
+	margin: 0 auto;
 }
 
 .fs-form-overview .cs-skin-boxes > span {
@@ -424,6 +415,7 @@ button.fs-continue,
 	width: 90px;
 	height: 70px;
 	font-size: 0.8em;
+	margin:0 auto;
 }
 
 .fs-form-overview .cs-skin-boxes > span::before {
@@ -447,6 +439,10 @@ button.fs-continue,
 }
 
 /* placeholder */
+.cs-placeholder{
+	background-size: contain !important;
+}
+
 .fs-fields input::-webkit-input-placeholder,
 .fs-fields textarea::-webkit-input-placeholder {
 	color: rgba(0,0,0,0.1);
