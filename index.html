@@ -47,6 +47,15 @@
 							<input class="fs-anim-lower" id="q3" name="q3" type="text" placeholder="">
 						</li>
 						<li data-input-trigger>
+							<label class="fs-field-label fs-anim-upper" for="q4">How did you hear about us?</label>
+                            <div class="fs-anim-lower">
+                              <input type="checkbox" name="heard-about" value="News">News<br>
+                              <input type="checkbox" name="heard-about" value="PressRelease">Press Release<br>
+                              <input type="checkbox" name="heard-about" id="REDPortal" value="REDPortal">RED Portal<br>
+                              <input type="checkbox" name="heard-about" value="Flyer">Flyer<br>
+                            </div>
+						</li>
+						<li data-input-trigger>
 							<label class="fs-field-label fs-anim-upper" data-info="We'll make sure to use it all overWe'll make sure to use it all overWe'll make sure to use it all overWe'll make sure to use it all overWe'll make sure to use it all overWe'll make sure to use it all overWe'll make sure to use it all overWe'll make sure to use it all overWe'll make sure to use it all over">Choose a Property</label>
 							<select class="cs-select cs-skin-boxes fs-anim-lower">
 								<option class="property-list" value="" disabled selected>Choose a Property</option>
@@ -143,6 +152,14 @@
                 var url = new URL(url_string);
                 var address = url.searchParams.get("address");
                 document.getElementById('q3').value = address;
+                var reference = url.searchParams.get("reference");
+                if(reference){
+                    $('#REDPortal').attr(
+                        {
+                         'checked': 'true',
+                         'disabled': 'true'
+                        });
+                }
             });
 		</script>
 	</body>
