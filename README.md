@@ -4,4 +4,5 @@ An example mockup of a wizard to replace the current static ASP based City of De
 Built on Classie.js and FullScreenForm open-sourced from Codrops.
 
 Current form: http://app.detroitmi.gov/PropertyApplicationForm/
+
 Example: https://juancatothe.github.io/commercial_property_wizard/
